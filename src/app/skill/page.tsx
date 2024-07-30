@@ -17,8 +17,8 @@ const AboutPage = () => {
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4 icon-orange-block">{category}</h3>
               <ul className="list-disc list-inside space-y-2">
-                {skills[category].map((skill, index) => (
-                  <li key={index} className="text-gray-700">{skill}</li>
+                {Object.keys(category).map((item, i) => (
+                  <li key={i} className="text-gray-700">{item}</li>
                 ))}
               </ul>
             </div>
